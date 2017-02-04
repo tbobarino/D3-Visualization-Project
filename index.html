@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+    body {
+        text-align: center;
+        background-color: black;
+    }
+    
+    rect:hover {
+        fill: white;
+    }
+
+    .jumbotron {
+      background-image: url("https://img.clipartfest.com/20cee51ce82deb0da06cd9211458b819_cage-bars-cell-jail-prison-prison-cell-bars-transparent-background-clipart_900-720.png");
+      background-repeat:no-repeat;
+      background-position: center;
+      background-color: #161616;
+      color: white;
+      opacity: .75;
+      text-shadow:5px 5px 5px rgba(0,0,250,0.8);
+      font-family: optima;
+    }
+    
+    div.tooltip {
+        font: 25px sans-serif;
+        border: 0px;
+        pointer-events: none;
+        color: #dedfe0;
+    }
+
+    #bottom {
+      font-size: 25px;
+      color:#dedfe0;
+    }
+    </style>
+</head>
+
+<body><div>
+    <div class="jumbotron text-center">
+        <h1>2015 World Incarceration Rates by Country</h1>
+        <h2>Per 100,000 People</h2>
+    </div>
+    <svg></svg>
+    <div id="bottom">Countries</div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-axis.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
