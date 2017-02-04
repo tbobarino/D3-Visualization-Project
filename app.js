@@ -5,7 +5,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 
-d3.csv('/data.csv', function(data) {
+d3.csv('data.csv', function(data) {
     countryData = data;
     var height = 800;
     var width = 1150;
