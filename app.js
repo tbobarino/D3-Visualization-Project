@@ -48,7 +48,7 @@ d3.csv('./data.csv', function(data) {
                 .style("opacity", .9);
             div.html("<b>"+d.country +"</b>"+ "<br/>" + "Rate: " + d.incarceration)
                 .style("left", (d3.event.pageX-42) + "px")
-                .style("top", (height - d.incarceration +150) + "px");
+                .style("top", (height - d.incarceration) + "px");
         })
         .on("mouseout", function(d) {
             div.transition()
