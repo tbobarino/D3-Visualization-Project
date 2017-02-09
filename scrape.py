@@ -18,5 +18,3 @@ with open('data.csv', 'w') as file:
 			country = row.findNext('a').contents[0]
 			amount = re.sub('[^0-9]','',row.findNext('td').findNext('td').contents[0])
 			writer.writerow([country,amount])    
-
-from IPython import embed; embed()
